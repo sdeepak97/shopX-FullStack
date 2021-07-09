@@ -16,10 +16,12 @@ export class UserRepository extends Repository<UserEntity> {
     let jwt_secret = process.env.JWT_SECRET as string;
 
     if (!isValidated) {
+      
       return res.send({
         authentication: false,
         data: "Invalid email",
       });
+      
     } else {
       //! Find the user password from the database
       let findUserPasswordFromDb = await this.createQueryBuilder("users")
@@ -58,6 +60,7 @@ export class UserRepository extends Repository<UserEntity> {
               {
                 expiresIn: "2h",
               },
+              
               async (error: any, authdata: any) => {
                 if (error) {
                   return res.send({

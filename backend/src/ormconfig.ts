@@ -10,7 +10,7 @@ const connectionOptions: ConnectionOptions = {
   host: "localhost",
   port: 5432,
   username: "postgres",
-  password: "123456789",
+  password: "9848755758",
   database: "postgres",
   entities: [UserEntity,CartEntity,UserInfoEntity,ProductEntity],
   synchronize: true,
