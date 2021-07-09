@@ -34,7 +34,7 @@ class SignupView extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            vSizedBox5,
+            vSizedBox4,
             Text("Hey there!", style: CustomTextStyle.heading1),
             vSizedBox1,
             Text("Welcome to Shopex!", style: CustomTextStyle.heading2),
@@ -85,7 +85,7 @@ class SignupView extends StatelessWidget {
                       onTap: () => createAccount(),
                       child: Container(
                         width: 300.0,
-                        height: 50.0,
+                        height: 30.0,
                         decoration: BoxDecoration(
                             color: Colors.white.withOpacity(1),
                             borderRadius: BorderRadius.circular(18.0)),
