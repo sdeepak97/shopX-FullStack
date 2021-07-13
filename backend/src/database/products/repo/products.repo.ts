@@ -102,7 +102,7 @@ export class ProductRepository extends Repository<ProductEntity> {
   //! Delete products
   async deleteProduct(req: Request, res: Response) {
     let adminsecret = req.headers.authorization;
-    if (adminsecret === "123456789") {
+    if (adminsecret === "9848755758") {
       let { product_id } = req.params;
       await this.createQueryBuilder()
         .delete()

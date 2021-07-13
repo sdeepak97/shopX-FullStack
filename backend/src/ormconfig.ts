@@ -14,7 +14,7 @@ const connectionOptions: ConnectionOptions = {
   ssl: { rejectUnauthorized: false },
   type: "postgres",
   host: process.env.Host || "localhost",
-  port: 5432,
+  port: 5432 || process.env.DB_Port,
   username: process.env.User || "postgres",
   password: process.env.DB_Password || "9848755758",
   database: process.env.Database || "postgres",

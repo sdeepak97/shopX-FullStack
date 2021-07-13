@@ -1,1 +1,1 @@
-const String BASEURL = "https://privateshopexbackend.herokuapp.com";
+const String BASEURL = "https://shopxfullstack.herokuapp.com";

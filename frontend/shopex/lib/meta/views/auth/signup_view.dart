@@ -85,7 +85,7 @@ class SignupView extends StatelessWidget {
                       onTap: () => createAccount(),
                       child: Container(
                         width: 300.0,
-                        height: 30.0,
+                        height: 50.0,
                         decoration: BoxDecoration(
                             color: Colors.white.withOpacity(1),
                             borderRadius: BorderRadius.circular(18.0)),
